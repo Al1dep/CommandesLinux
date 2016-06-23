@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Commandes GNU-Linux </title>
+</head>
+<body>
+  <!-- Sommaire avec liens actifs -->
+  <h1>Sommaire</h1>
+  <!-- liens internes -->
+    <h2><a href="#Répertoires">Répertoires</a></h2>
+    <h2><a href="#Fichiers">Fichiers</a></h2>
+    <h2><a href="#Traitement de fichiers et filtres">Traitement de fichiers et filtres</a></h2>
+    <h2><a href="#Documentation">Documentation</a></h2>
+    <h2><a href="#Droits">Droits</a></h2>
+    <h2><a href="#Gestion des comptes utilisateurs">Gestion des comptes utilisateurs</a></h2>
+    <h2><a href="#Processus">Processus</a></h2>
+    <h2><a href="#Temps">Temps</a></h2>
+    <h2><a href="#Surveillance"></a></h2>
+    <h2><a href="#Communication"></a></h2>
+    <h2><a href="#Divers"></a></h2>
+  <h1 id="Répertoires">Répertoires</h1>
+  <table>
+    <tr>
+      <td>pwd</td>
+      <td>Affiche le chemin absolu du répertoire courant</td>
+    </tr>
+    <tr>
+      <td>cd</td>
+      <td>Change de répertoire</td>
+    </tr>
+    <tr>
+      <td>ls</td>
+      <td>Liste le contenu des répertoires ou le nom des fichiers passés en arguments</td>
+    </tr>
+    <tr>
+      <td>mkdir</td>
+      <td>Créé les répertoires passés en arguments.</td>
+    </tr>
+    <tr>
+      <td>rmdir</td>
+      <td>Supprime les répertoires passés en arguments</td>
+    </tr>
+  </table>
+  <h1 id="Fichiers">Fichiers</h1>
+  <table>
+    <tr>
+      <td>cp</td>
+      <td>Copie les fichiers source vers destination</td>
+    </tr>
+    <tr>
+      <td>mv</td>
+      <td>Renomme/déplace les fichiers source vers destination</td>
+    </tr>
+    <tr>
+      <td>rm</td>
+      <td>Supprime les fichiers passés en arguments</td>
+    </tr>
+    <tr>
+      <td>ln</td>
+      <td>Créé le lien destination vers le fichier source</td>
+    </tr>
+    <tr>
+      <td>touch</td>
+      <td>Met à jour l'horodatage des fichiers passés en arguments ou créé ceux-ci s'ils n'existent pas</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Indique comment chaque commande cmd doit être interprétée si elle est invoquée en ligne de commandes</td>
+    </tr>
+    <tr>
+      <td>which</td>
+      <td>Retourne les chemins des binaires de chaque commande cmd passés en argument</td>
+    </tr>
+    <tr>
+      <td>whereis</td>
+      <td>Retourne les chemins du binaire, des sources et de la page de manuel des commandes passées en argument</td>
+    </tr>
+    <tr>
+      <td>find</td>
+      <td>Recherche de fichiers multi-critères</td>
+    </tr>
+    <tr>
+      <td>updatedb</td>
+      <td>Création et mise à jour de la base de données utilisée par la commande locate</td>
+    </tr>
+    <tr>
+      <td>locate</td>
+      <td>Recherche de fichiers suivant leur nom</td>
+    </tr>
+  </table>
+  <h1 id="Traitement_fichiers et filtres">Traitement de fichiers et filtres</h1>
+  <table>
+    <tr>
+      <td>cat</td>
+      <td>Affiche le contenu des fichiers texte passés en arguments</td>
+    </tr>
+    <tr>
+      <td>tac</td>
+      <td>Affiche le contenu inversé (de la dernière ligne à la première) des fichiers texte passés en arguments</td>
+    </tr>
+    <tr>
+      <td>nl</td>
+      <td>Affiche le contenu des fichiers texte passés en arguments en numérotant les lignes</td>
+    </tr>
+    <tr>
+      <td>more</td>
+      <td>Affiche page par page le contenu des fichiers texte passés en arguments</td>
+    </tr>
+    <tr>
+      <td>less</td>
+      <td>Affiche page par page le contenu des fichiers texte passés en arguments</td>
+    </tr>
+    <tr>
+      <td>wc</td>
+      <td>Affiche le nombre de lignes, de mots et de caractères (Word Count) contenus dans les fichiers passés en arguments</td>
+    </tr>
+    <tr>
+      <td>od</td>
+      <td>Affiche (en octal par défaut) le contenu des fichiers binaires passés en arguments (Octal Dump)</td>
+    </tr>
+    <tr>
+      <td>strings</td>
+      <td>Affiche le contenu texte des fichiers binaires passés en arguments</td>
+    </tr>
+    <tr>
+      <td>split</td>
+      <td>Découpe le fichier src en plusieurs fichiers de la taille spécifiée (en Ko ici) nommés dstaa, dstab, dstac, ...</td>
+    </tr>
+    <tr>
+      <td>join</td>
+      <td>Effectue une jointure (dans le sens d'une base de données relationnelle) entre deux fichiers texte</td>
+    </tr>
+    <tr>
+      <td>paste</td>
+      <td>Fusionne ligne par ligne les fichiers passés en argument</td>
+    </tr>
+    <tr>
+      <td>gzip</td>
+      <td>Compresse le fichier fichier au format GNU Zip</td>
+    </tr>
+    <tr>
+      <td>gunzip</td>
+      <td>Décompresse le fichier fichier.gz qui est au format GNU Zip</td>
+    </tr>
+    <tr>
+      <td>tr</td>
+      <td>Substitue un à un les caratères de la liste1 par ceux de la liste2 dans le texte envoyé sur l'entrée standard de la commande</td>
+    </tr>
+    <tr>
+      <td>grep</td>
+      <td>Affiche uniquement les lignes, des fichiers passés en argument, correspondantes à l'expression rationnelle (ou expression régulière)</td>
+    </tr>
+    <tr>
+      <td>sed</td>
+      <td>Applique les instructions sed sur les fichiers passés en arguments</td>
+    </tr>
+    <tr>
+      <td>awk</td>
+      <td>Applique les instructions awk sur les fichiers passés en arguments</td>
+    </tr>
+    <tr>
+      <td>cut</td>
+      <td>Affiche les champs spécifiés avec l'option -f et séparés par le délimiteur indiqué après l'option -d, ou affiche les colonnes de caractères indiquées après l'option -c</td>
+    </tr>
+    <tr>
+      <td>head</td>
+      <td>Affiche les n premières lignes (ou les 10 premières si n n'est pas spécifié)</td>
+    </tr>
+    <tr>
+      <td>tail</td>
+      <td>Avec -, affiche les n dernières lignes (ou les 10 dernières si n n'est pas spécifié).
+        Avec +, affiche à partir de la nième ligne</td>
+      </tr>
+    </table>
+    <h1 id="Documentation">Documentation</h1>
+    <table>
+      <tr>
+        <td>man</td>
+        <td>Affiche la page de manuel électronique dont le nom est argument</td>
+      </tr>
+      <tr>
+        <td>apropos</td>
+        <td>Idem que man -k <argument></td>
+        </tr>
+      </table>
+      <h1 id="Droits">Droits</h1>
+      <table>
+        <tr>
+          <td>chmod</td>
+          <td>Modifie les droits d'accès (CHange MODe) aux fichiers passés en arguments suivant le mode (notation symbolique ou octale)</td>
+        </tr>
+        <tr>
+          <td>umask</td>
+          <td>Affiche le masque binaire déterminant les droits par défaut sur les nouveaux fichiers créés (sans argument) ou modifie ce masque (argument en notation octale)</td>
+        </tr>
+      </table>
+      <h1 id="Gestion des comptes utilisateurs">Gestion des comptes utilisateurs</h1>
+      <table>
+        <tr>
+          <td>passwd</td>
+          <td>Change le mot de passe du compte utilisateur (mot de passe de l'utilisateur connecté si pas d'argument)</td>
+        </tr>
+      </table>
+      <h1 id="Processus">Processus</h1>
+      <table>
+        <tr>
+          <td>ps</td>
+          <td>Liste les processus (programmes en cours d'exécution)</td>
+        </tr>
+        <td>pstree</td>
+        <td>Liste les processus de façon arborescente</td>
+      </tr>
+      <tr>
+        <td>jobs</td>
+        <td>Liste les "jobs" (processus lancés par le shell courant)</td>
+      </tr>
+      <tr>
+        <td>bg %<job></td>
+          <td>Relance le "job" job en arrière plan</td>
+        </tr>
+        <tr>
+          <td>fg %<job></td>
+            <td>Relance le "job" job en avant plan</td>
+          </tr>
+          <tr>
+            <td>kill <signal> %<job></td>
+              <td>Envoi le signal signal au "job" job</td>
+            </tr>
+            <tr>
+              <td>kill <signal> <pid></td>
+                <td>Envoi le signal signal au processus dont le PID est pid</td>
+              </tr>
+              <tr>
+                <td>top</td>
+                <td>Affiche une liste - rafraîchie régulièrement - des processus en cours d'exécution et permet de les contrôler</td>
+              </tr>
+            </table>
+            <h1 id="Temps">Temps</h1>
+            <table>
+              <tr>
+                <td>date</td>
+                <td>Affiche ou modifie la date système</td>
+              </tr>
+              <tr>
+                <td>sleep</td>
+                <td>Attend sans rien faire autant de temps que spécifié en argument. L'unité par défaut est la seconde</td>
+              </tr>
+              <tr>
+                <td>cal</td>
+                <td>Affiche le calendrier du mois en cours (pas d'argument), de l'année en cours (un argument) ou du mois et de l'année spécifiés (deux arguments)</td>
+              </tr>
+            </table>
+            <h1 id="Surveillance">Surveillance</h1>
+            <table>
+              <tr>
+                <td>who</td>
+                <td>Liste les utilisateurs connectés au système</td>
+              </tr>
+              <tr>
+                <td>who am i</td>
+                <td>Liste l'utilisateur actuellement connecté au système</td>
+              </tr>
+              <tr>
+                <td>whoami</td>
+                <td>Retourne le login de l'utilisateur actuellement connecté au système</td>
+              </tr>
+              <tr>
+                <td>finger</td>
+                <td>Liste les utilisateurs connectés au système (pas d'argument) ou détaille les comptes des utilisateurs passés en argument</td>
+              </tr>
+            </table>
+            <h1 id="Communication">Communication</h1>
+            <table>
+              <tr>
+                <td>write</td>
+                <td>Affiche un message sur le terminal de l'utilisateur passé en argument</td>
+              </tr>
+              <tr>
+                <td>wall</td>
+                <td>Affiche un message sur le terminal des utilisateurs connectés</td>
+              </tr>
+              <tr>
+                <td>mail</td>
+                <td>Lit la boîte aux lettres de l'utilisateur connecté (pas d'argument) ou envoi un message électronique dans la boîte aux lettres de l'utilisateur passé en argument. </td>
+              </tr>
+              <tr>
+                <td>talk</td>
+                <td>Établi une session de messagerie instantanée (chat) avec l'utilisateur passé en argument</td>
+              </tr>
+              <tr>
+                <td>mesg</td>
+                <td>Affiche si l'utilisateur actuellement connecté accepte ou non les messages provenant d'autres utilisateurs</td>
+              </tr>
+            </table>
+            <h1 id="Divers">Divers</h1>
+            <table>
+              <tr>
+                <td>clear</td>
+                <td>Efface l'écran du terminal</td>
+              </tr>
+              <tr>
+                <td>echo</td>
+                <td>Affiche sur la sortie standard les chaînes de caractères passées en arguments, séparées par un espace</td>
+              </tr>
+              <tr>
+                <td>exit</td>
+                <td>Quitte le shell en cours avec le code retour passé en argument ; par défaut exit retourne le code retour 0</td>
+              </tr>
+              <tr>
+                <td>logout</td>
+                <td>Déconnecte l'utilisateur</td>
+              </tr>
+              <tr>
+                <td>alias</td>
+                <td>Affiche les alias définis dans l'environnement shell actuel (pas d'argument) ou en défini un nouveau</td>
+              </tr>
+              <tr>
+                <td>unalias</td>
+                <td>Supprime l'alias de l'environnement shell actuel</td>
+              </tr>
+            </table>
+          </body>
+          </html>

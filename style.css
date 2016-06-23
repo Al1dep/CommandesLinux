@@ -1,0 +1,9 @@
+h1
+{
+color: red;
+}
+/* Commentaire  du CSS à venir  */
+h2, a[href]
+{
+color: green;
+}
